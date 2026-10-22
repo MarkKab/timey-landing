@@ -146,6 +146,53 @@
 .project-insight-side{margin-left:auto;color:#999ca9;font-size:12px}
 .project-insight p{margin:16px 0 0;color:#8a8f9e;font-size:13px;line-height:1.55}
 @media(max-width:440px){.project-insight{padding:17px}.project-insight-row{flex-wrap:wrap}.project-insight-side{width:100%;margin-left:21px}}
+
+/* SECTION 04 / statistics */
+.stats-section{max-width:1280px;margin:0 auto;padding:100px clamp(8px,3.5vw,56px) 125px}
+.stats-intro{max-width:800px;margin-bottom:51px}
+.stats-eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;color:#9295a3}
+.stats-intro h2{font-size:clamp(40px,5vw,69px);line-height:1.1;letter-spacing:-.055em;font-weight:680;margin:22px 0 20px}
+.stats-intro h2 span{color:#969baa}
+.stats-intro p{max-width:570px;color:#71788a;line-height:1.65;font-size:clamp(16px,1.45vw,19px);margin:0}
+.stats-layout{display:grid;grid-template-columns:minmax(0,1.62fr) minmax(285px,.82fr);gap:20px;align-items:stretch}
+.stats-main,.stats-aside{border:1px solid #fff;border-radius:31px;background:rgba(255,255,255,.66);box-shadow:0 18px 50px rgba(42,46,78,.055)}
+.stats-main{min-width:0;padding:clamp(22px,3vw,40px) clamp(19px,3.2vw,42px) 30px}
+.stats-topline{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.stats-context{display:inline-flex;align-items:center;gap:9px;color:#999dab;font-size:11px;font-weight:700;letter-spacing:.15em}
+.stats-dot{display:block;width:8px;height:8px;border-radius:50%;background:#a494ff}
+.stats-tabs{display:flex;align-items:center;gap:4px;background:#f0f0f6;border-radius:999px;padding:4px;flex:none}
+.stats-tab{border:0;border-radius:999px;padding:9px 14px;color:#959aaa;font-size:12px;background:transparent;cursor:pointer;font-weight:650}
+.stats-tab.is-active{background:#fff;color:#353746;box-shadow:0 2px 8px rgba(42,46,78,.07)}
+.stats-tab:focus-visible{outline:2px solid #a494ff;outline-offset:2px}
+.stats-number-row{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:35px 0 24px}
+.stats-total-label{display:block;color:#9499a7;font-size:13px;margin-bottom:12px}
+.stats-total{font-size:clamp(36px,5vw,65px);font-weight:680;letter-spacing:-.055em;font-variant-numeric:tabular-nums;line-height:1}
+.stats-total span{font-size:.5em;font-weight:550;color:#9a9dad;letter-spacing:-.03em}
+.stats-chart-note{color:#a0a4b1;font-size:12px;white-space:nowrap;padding-bottom:6px}
+.stats-chart-note span{font-size:18px;margin-left:4px;color:#a494ff}
+.stats-bars{height:235px;display:flex;align-items:stretch;justify-content:space-between;gap:clamp(8px,2vw,23px);border-bottom:1px solid #e4e5ed;padding:8px 10px 0;position:relative;background:repeating-linear-gradient(to top,transparent 0,transparent calc(25% - 1px),rgba(220,221,234,.55) 25%);background-size:100% calc(100% - 32px);background-repeat:no-repeat}
+.stats-bar-col{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:12px;color:#a2a6b2;font-size:12px;font-weight:550}
+.stats-bar{height:calc((100% - 28px)*var(--bar-size)/100);height:var(--bar-size);min-height:2px;width:min(100%,46px);border-radius:11px 11px 4px 4px;background:linear-gradient(180deg,#C2B7FF,#A494FF);position:relative;transition:height .45s cubic-bezier(.22,1,.36,1);cursor:default}
+.stats-bar:hover{background:linear-gradient(180deg,#B0A0FF,#8873ED)}
+.stats-bar-tip{opacity:0;position:absolute;left:50%;bottom:calc(100% + 9px);transform:translateX(-50%);background:#353543;color:white;font-size:10px;white-space:nowrap;padding:7px 9px;border-radius:8px;pointer-events:none}
+.stats-bar:hover .stats-bar-tip{opacity:1}
+.stats-bar-col>span{margin-bottom:-27px}
+.stats-aside{padding:clamp(23px,3vw,38px);display:flex;flex-direction:column;align-items:stretch}
+.stats-aside-top{display:flex;align-items:start;justify-content:space-between;color:#333544;font-size:17px;font-weight:650}
+.stats-asterisk{font-size:25px;color:#ffba8e;line-height:1}
+.stats-ring{width:min(185px,75%);aspect-ratio:1/1;border-radius:50%;margin:29px auto 25px;background:conic-gradient(#a494ff 0 48%,#76c6ff 48% 80%,#ffba8e 80% 100%);display:grid;place-items:center;transform:rotate(-90deg)}
+.stats-ring-inside{width:74%;height:74%;border-radius:50%;background:#fcfbff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(90deg)}
+.stats-ring-inside span{font-size:38px;line-height:1;font-weight:680}
+.stats-ring-inside small{font-size:12px;color:#9da1ae;margin-top:7px}
+.stats-legend{display:flex;flex-direction:column;gap:16px;margin-top:auto}
+.stats-legend>div{display:flex;align-items:center;gap:9px;color:#717788;font-size:13px}
+.stats-legend i{width:10px;height:10px;border-radius:50%;flex:none;background:var(--legend)}
+.stats-legend strong{margin-left:auto;color:#3c3e4b;font-weight:650}
+.stats-aside-bottom{display:block;color:#a0a4ae;font-family:"Segoe Print","Comic Sans MS",cursive;font-size:12px;margin:29px 0 0;line-height:1.45}
+.stats-disclaimer{font-size:12px;color:#a2a6b1;text-align:center;margin:23px 0 0}
+@media(max-width:900px){.stats-section{padding:75px 6px 90px}.stats-layout{grid-template-columns:1fr}.stats-aside{display:grid;grid-template-columns:1fr auto;gap:15px 26px;align-items:center}.stats-aside-top{grid-column:1/-1}.stats-ring{width:170px;margin:0}.stats-legend{gap:15px}.stats-aside-bottom{grid-column:1/-1;margin:0}}
+@media(max-width:560px){.stats-section{padding:65px 0 85px}.stats-intro h2{font-size:clamp(37px,9vw,51px)}.stats-main{padding:22px 15px 33px}.stats-topline{flex-wrap:wrap}.stats-number-row{margin-top:28px}.stats-chart-note{display:none}.stats-bars{height:185px;padding:8px 3px 0;gap:8px}.stats-bar{border-radius:7px 7px 3px 3px}.stats-aside{display:flex}.stats-ring{margin:17px auto;width:170px}.stats-legend{width:100%}.stats-aside-bottom{margin-top:8px}}
+@media(prefers-reduced-motion:reduce){.stats-bar{transition:none}}
 </style></head>
 <body><div class="shell"><header><a class="brand" href="#" aria-label="Timey"><svg class="logo-svg" viewBox="0 0 1460.66 663.74" fill="currentColor" aria-hidden="true"><path d="M230.93,89.28c-2.49-1.8-44.76,7.84-51.18,9.27-36.88,8.21-85.86,18.88-118.39,37.5-15.41,8.82-27.02,25.58-46.29,17.64-20.47-8.43-17.82-32.6-5.52-47.45,34.07-41.13,123.22-60.16,174.2-70.62C275.56,16.79,375.6,4.71,469.33,1.41c27.57-.97,70.25-3.92,96.41,3.45,32.05,9.02,28.76,51.95-3.63,55.33-16.18,1.69-38.53-1.22-55.89-.92-2.85.05-5.27,1.03-7.91,1.09-53.8,1.28-118.02,3.92-170.64,14.24-14.05,2.75-20.43,6.79-27.95,19.02-10.98,17.85-21.34,42.01-30.67,61.25-62.05,127.92-115.02,258.86-157.87,394.61-8.63,17.38-28.38,24.64-44.88,12.54-18.28-13.41-10.68-39.13-6.4-57.8,10.5-45.83,29.4-95.49,46.33-139.49,36.23-94.14,79.71-185.3,124.69-275.43Z"/><path d="M367.63,144.49c16.41-1.87,36.47,8.34,38.19,26.2,2.78,29.02-30.91,54.53-57.25,39.25-31.16-18.08-12.14-61.89,19.07-65.45Z"/><path d="M1446.26,526.34c-46.83-8.44-97.78-15.02-152.6-19.73,35.23-70.44,61.22-151,81.3-223.33,4.38-15.79,16.79-55.22,15.17-69.54-2.49-22.03-33.96-34.61-50.4-18.63-10.28,9.99-25.24,40.22-34.03,53.9-28.63,44.61-72.27,113.73-118.42,140.36-7.62,4.39-21.9,13.25-25.22.39-8.77-33.9,32.81-109.84,44.77-143.68,3.16-8.95,5.15-13.95,1.39-23.32-6.78-16.88-32.88-28.22-48.78-17.05-18.73,13.15-37.75,72.12-47.57,94.3-6.69,15.11-19.85,33.65-30.05,46.88-27.97,36.29-93.78,99.79-143.71,89.91-21.23-4.2-27-24.82-24.59-43.86h17.49c31.07,0,88.79-43.91,108.95-66.91,28.82-32.88,51.95-87.44,1.36-113.27-72.08-36.82-148.92,49.48-174.24,109.29-5.54,13.1-8.13,27.69-13.13,39.82-6.19,15.01-49.31,59.64-64.03,66.86-6.69,3.27-10.55,3.56-10.34-5.27.41-17.76,11.89-49.5,17.99-67,8.03-22.99,32.54-72.91,29.89-94.77-3.32-27.42-41.79-40.32-65.29-33.52-19.84,5.75-45.02,33.49-59.04,48.88-20.67,22.7-38.81,47.66-59.95,69.94.81-12.74,6.76-25.52,10.01-37.94,6.44-24.56,13.76-50.68-12.18-66.77-38.28-23.73-69.8,16.9-93.78,41.77-24.75,25.66-47.31,53.62-73.43,77.93,1.33-13.77,6.9-27.79,11.52-40.92,6.95-19.78,18.17-41.66,23.73-61.19,4.52-15.89.45-28.91-14.34-37.18-33.72-18.85-47.71,16.92-58.37,41.42-11.81,27.13-18.01,53.34-34.48,78.42-8.78,13.35-20.17,28.2-30.5,40.44-17.04,20.2-37.54,41.52-61.16,53.77-3.06.29-4.21-6-4.21-8.23.03-23.02,18.84-68.36,28.39-90.49,7.49-17.35,18.54-35.73,24.96-52.98,6.77-18.2-2.93-34.95-20.8-41.11-23.58-8.13-33.49,8.94-43.82,26.47-17.1,29.04-31.05,67.54-39.73,100.15-8.7,32.71-22.85,82.03,14.39,102.33,42.84,23.35,87.5-20.82,113.43-50.49,4.6-5.27,9.29-13.32,14.04-17.94.96-.94,1.28-1.92,2.98-1.51-1.74,12.74-4.04,26.62-3.03,39.49,2.37,30.35,32.5,44.48,56.47,24.41,29.19-24.45,56.28-67.81,82.96-96.89,11.5-12.53,24.83-25.27,38-35.94,1.11.34.37,2.31.24,3.23-4.46,30.31-28.78,101.62,10.55,117.84,26.41,10.9,43.6-11.75,59.18-29.16,22.63-25.29,42.85-53.01,65.93-77.94,2.09-2.26,31.12-32.74,32.48-30.96-4.23,18.56-11.19,36.38-15.49,54.93-7.27,31.38-16.69,79.37,19.81,96.11,32.35,14.82,64.8-6.31,89.11-26.19,2.85-2.34,15.55-15.49,17.96-14.94,27.9,69.65,106.07,60.49,161.13,30.12,32.18-17.75,58.93-43.55,82.79-71.09,2.73,18.83,6.92,36.14,23.15,47.77,39.85,28.55,93.3-14.65,122.27-41.27,12.21-11.22,23.97-26.17,36.46-36.48,1.13-.93,1.62-2.42,3.5-1.99-12.97,52.03-32.36,101.8-58.65,147.81-57.46-3.13-118.6-4.41-183.16-3.8-124.61,1.17-262.26,9.29-409.1,24.15-249.87,25.29-442.6,61.86-444.52,62.22-9.49,1.82-15.72,10.99-13.9,20.48,1.6,8.38,8.93,14.22,17.17,14.22,1.08,0,2.19-.1,3.3-.32,1.9-.36,193.12-36.64,441.48-61.77,161.28-16.33,370.49-30.15,567.52-21.1-9.76,14.42-20.27,28.4-31.56,41.88-10.6,12.68-39.08,39.35-44.67,52.25-7.93,18.29,6.32,33.5,24.66,33.72,37.73.47,89.45-69.18,108.47-98.45,5.25-8.08,10.33-16.42,15.24-24.97,57.05,4.44,112.39,11.09,164.47,20.48,9.51,1.7,18.61-4.61,20.33-14.12,1.71-9.51-4.61-18.61-14.12-20.33ZM938.09,321.11c12.2-19.71,32.58-44.2,52.08-56.84,28.92-18.74,24.71,6.7,13.72,24.7-17.51,28.67-50.82,52.95-81.36,66.01-2.22-2.98,12.84-29.48,15.56-33.87Z"/></svg></a><nav><a href="#preview">Возможности</a><a href="#preview">Как это работает</a><a href="#preview">Для кого</a><a href="#preview">FAQ</a></nav><a class="btn" href="https://github.com/MarkKab/timey">Затестить Timey →</a></header>
 <main class="hero"><section class="copy"><div class="eyebrow">Тайм-трекер для людей</div><h1>Время - это ценность.</h1><p class="desc">Простой способ отслеживать время, управлять проектами и видеть, сколько на самом деле приносит твоя работа.</p><div class="actions"><a class="btn" href="https://github.com/MarkKab/timey">Затестить Timey →</a><a class="secondary" href="#preview"><span class="play">▶</span>Посмотреть, как это работает</a></div></section>
@@ -190,6 +237,31 @@
     </div>
   </div>
   <p class="project-demo-footnote">Демонстрационные проекты и суммы — для примера.</p>
+</section>
+<section class="stats-section" id="statistics" aria-labelledby="stats-heading">
+  <div class="stats-intro"><div><span class="stats-eyebrow">03 / ВРЕМЯ В ЦИФРАХ</span><h2 id="stats-heading">Смотри на работу <span>под другим углом.</span></h2><p>Не только сколько времени прошло, но и куда оно ушло. Статистика помогает увидеть свой рабочий ритм.</p></div></div>
+  <div class="stats-layout">
+    <div class="stats-main">
+      <div class="stats-topline"><span class="stats-context"><span class="stats-dot"></span> ОБЗОР ВРЕМЕНИ</span><div class="stats-tabs" role="group" aria-label="Период статистики"><button type="button" class="stats-tab is-active" data-period="week" aria-pressed="true">Неделя</button><button type="button" class="stats-tab" data-period="month" aria-pressed="false">Месяц</button></div></div>
+      <div class="stats-number-row"><div><span class="stats-total-label" id="stats-total-label">За эту неделю</span><div class="stats-total" id="stats-total">32 <span>ч</span> 45 <span>мин</span></div></div><span class="stats-chart-note">Время по дням <span aria-hidden="true">↗</span></span></div>
+      <div class="stats-bars" id="stats-bars" role="img" aria-label="Пример распределения времени по дням недели">
+        <div class="stats-bar-col"><div class="stats-bar" style="--bar-size:64%"><span class="stats-bar-tip">5 ч 20 мин</span></div><span>Пн</span></div>
+        <div class="stats-bar-col"><div class="stats-bar" style="--bar-size:78%"><span class="stats-bar-tip">6 ч 30 мин</span></div><span>Вт</span></div>
+        <div class="stats-bar-col"><div class="stats-bar" style="--bar-size:52%"><span class="stats-bar-tip">4 ч 20 мин</span></div><span>Ср</span></div>
+        <div class="stats-bar-col"><div class="stats-bar" style="--bar-size:95%"><span class="stats-bar-tip">7 ч 55 мин</span></div><span>Чт</span></div>
+        <div class="stats-bar-col"><div class="stats-bar" style="--bar-size:73%"><span class="stats-bar-tip">6 ч 5 мин</span></div><span>Пт</span></div>
+        <div class="stats-bar-col"><div class="stats-bar" style="--bar-size:31%"><span class="stats-bar-tip">2 ч 35 мин</span></div><span>Сб</span></div>
+        <div class="stats-bar-col"><div class="stats-bar" style="--bar-size:0%"><span class="stats-bar-tip">0 ч</span></div><span>Вс</span></div>
+      </div>
+    </div>
+    <div class="stats-aside">
+      <div class="stats-aside-top"><span>В разрезе проектов</span><span class="stats-asterisk" aria-hidden="true">✳</span></div>
+      <div class="stats-ring" role="img" aria-label="Пример распределения времени между тремя проектами"><div class="stats-ring-inside"><span>3</span><small>проекта</small></div></div>
+      <div class="stats-legend"><div><i style="--legend:#A494FF"></i><span>Дизайн сайта</span><strong>48%</strong></div><div><i style="--legend:#76C6FF"></i><span>Иллюстрации</span><strong>32%</strong></div><div><i style="--legend:#FFBA8E"></i><span>Монтаж видео</span><strong>20%</strong></div></div>
+      <span class="stats-aside-bottom">Маленькие цифры, которые многое объясняют.</span>
+    </div>
+  </div>
+  <p class="stats-disclaimer">Демонстрационные показатели — не реальные данные из приложения.</p>
 </section></div>
 <script>
 (() => {
@@ -269,6 +341,26 @@
     document.getElementById('project-payment').textContent=value.state;
     document.getElementById('project-insight-side').textContent=value.paid?'Оплата получена':'Оплата впереди';
     document.getElementById('project-payment-dot').classList.toggle('is-paid',value.paid);
+  }));
+
+  const statsPeriods={
+    week:{label:'За эту неделю',total:'32 <span>ч</span> 45 <span>мин</span>',names:['Пн','Вт','Ср','Чт','Пт','Сб','Вс'],values:[64,78,52,95,73,31,0],tips:['5 ч 20 мин','6 ч 30 мин','4 ч 20 мин','7 ч 55 мин','6 ч 5 мин','2 ч 35 мин','0 ч']},
+    month:{label:'За этот месяц',total:'124 <span>ч</span> 20 <span>мин</span>',names:['1 нед','2 нед','3 нед','4 нед'],values:[60,89,76,96],tips:['24 ч 10 мин','35 ч 25 мин','30 ч 5 мин','34 ч 40 мин']}
+  };
+  const statsBars=document.getElementById('stats-bars');
+  document.querySelectorAll('.stats-tab').forEach(button=>button.addEventListener('click',()=>{
+    const selected=statsPeriods[button.dataset.period];
+    if(!selected)return;
+    document.querySelectorAll('.stats-tab').forEach(tab=>{const on=tab===button;tab.classList.toggle('is-active',on);tab.setAttribute('aria-pressed',String(on))});
+    document.getElementById('stats-total-label').textContent=selected.label;
+    document.getElementById('stats-total').innerHTML=selected.total;
+    statsBars.setAttribute('aria-label','Демонстрационное распределение времени: '+selected.names.map((name,i)=>name+' — '+selected.tips[i]).join(', '));
+    statsBars.replaceChildren(...selected.names.map((label,i)=>{
+      const col=document.createElement('div');col.className='stats-bar-col';
+      const bar=document.createElement('div');bar.className='stats-bar';bar.style.setProperty('--bar-size',selected.values[i]+'%');
+      const tip=document.createElement('span');tip.className='stats-bar-tip';tip.textContent=selected.tips[i];
+      const name=document.createElement('span');name.textContent=label;bar.append(tip);col.append(bar,name);return col;
+    }));
   }));
 
 })();
