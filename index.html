@@ -411,20 +411,20 @@ header.is-scrolled{background:rgba(243,244,248,.87);border-color:rgba(255,255,25
   <p class="how-accessible-status" id="how-status" role="status" aria-live="polite">Нажми на кнопку любого таймера</p>
 </section>
 <section class="project-section" id="projects" aria-labelledby="project-heading">
-  <div class="project-intro"><div class="project-intro-copy"><span class="project-kicker">02 / ВСЁ ПО ПОЛОЧКАМ</span><h2 id="project-heading">У каждого проекта — <span>своё место.</span></h2><p>Проекты, их стоимость, затраченное время и оплата — всё на виду. Чтобы было проще оценивать свою работу.</p></div><span class="project-hand-doodle" aria-hidden="true"><svg viewBox="0 0 68 70" fill="none"><path d="M11 10c20 3 42 24 37 45M35 43l13 13 10-16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  <div class="project-intro"><div class="project-intro-copy"><span class="project-kicker">02 / ВСЁ ПО ПОЛОЧКАМ</span><h2 id="project-heading">У каждого проекта — <span>своё место.</span></h2><p>Проекты, их стоимость, затраченное время и тип — всё на виду. Чтобы было проще оценивать свою работу.</p></div><span class="project-hand-doodle" aria-hidden="true"><svg viewBox="0 0 68 70" fill="none"><path d="M11 10c20 3 42 24 37 45M35 43l13 13 10-16" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
   <div class="project-workspace">
     <div class="project-picker" role="group" aria-label="Выбрать проект">
       <div class="project-picker-top"><span>Мои проекты</span><span class="project-picker-count">03</span></div>
-      <button class="project-choice is-selected" data-project="site" type="button" aria-pressed="true"><span class="project-choice-icon" style="--pc:#A494FF">✦</span><span class="project-choice-info"><strong>Сайт-портфолио</strong><small>В работе</small></span><span class="project-choice-arrow" aria-hidden="true">↗</span></button>
-      <button class="project-choice" data-project="video" type="button" aria-pressed="false"><span class="project-choice-icon" style="--pc:#FFBA8E">▶</span><span class="project-choice-info"><strong>Монтаж ролика</strong><small>В работе</small></span><span class="project-choice-arrow" aria-hidden="true">↗</span></button>
-      <button class="project-choice" data-project="brand" type="button" aria-pressed="false"><span class="project-choice-icon" style="--pc:#76C6FF">◈</span><span class="project-choice-info"><strong>Фирменный стиль</strong><small>Оплачен</small></span><span class="project-choice-arrow" aria-hidden="true">↗</span></button>
+      <button class="project-choice is-selected" data-project="site" type="button" aria-pressed="true"><span class="project-choice-icon" style="--pc:#A494FF">✦</span><span class="project-choice-info"><strong>Сайт-портфолио</strong><small>Оплачиваемый</small></span><span class="project-choice-arrow" aria-hidden="true">↗</span></button>
+      <button class="project-choice" data-project="video" type="button" aria-pressed="false"><span class="project-choice-icon" style="--pc:#FFBA8E">▶</span><span class="project-choice-info"><strong>Монтаж ролика</strong><small>Оплачиваемый</small></span><span class="project-choice-arrow" aria-hidden="true">↗</span></button>
+      <button class="project-choice" data-project="brand" type="button" aria-pressed="false"><span class="project-choice-icon" style="--pc:#76C6FF">◈</span><span class="project-choice-info"><strong>Фирменный стиль</strong><small>Бесплатный</small></span><span class="project-choice-arrow" aria-hidden="true">↗</span></button>
       <p class="project-picker-hint">Попробуй выбрать другой проект ↑</p>
     </div>
     <div class="project-detail" aria-live="polite">
-      <div class="project-detail-header"><span class="project-detail-overline">О ПРОЕКТЕ</span><span class="project-detail-pill" id="project-state">В работе</span></div>
+      <div class="project-detail-header"><span class="project-detail-overline">О ПРОЕКТЕ</span><span class="project-detail-pill" id="project-state">Оплачиваемый</span></div>
       <h3 id="project-name">Сайт-портфолио</h3>
       <div class="project-metrics"><div class="project-metric"><span>Затрачено</span><strong id="project-hours">18 ч 40 мин</strong></div><div class="project-metric"><span>Стоимость</span><strong id="project-price">1 200 BYN</strong></div></div>
-      <div class="project-insight"><span class="project-insight-label">СТАТУС ПРОЕКТА</span><div class="project-insight-row"><span class="project-insight-dot" id="project-payment-dot"></span><strong id="project-payment">В работе</strong><span class="project-insight-side" id="project-insight-side">Оплата впереди</span></div><p>Время и стоимость проекта всегда рядом — удобно следить за тем, сколько работы уже вложено.</p></div>
+      <div class="project-insight"><span class="project-insight-label">ТИП ПРОЕКТА</span><div class="project-insight-row"><span class="project-insight-dot" id="project-payment-dot"></span><strong id="project-payment">Оплачиваемый</strong><span class="project-insight-side" id="project-insight-side">Фиксированная стоимость</span></div><p>Время и стоимость проекта всегда рядом — удобно следить за тем, сколько работы уже вложено.</p></div>
       <div class="project-detail-footer"><span class="project-footer-dot"></span> Здесь всё на своих местах <span class="project-footer-accent">✳</span></div>
     </div>
   </div>
@@ -565,9 +565,9 @@ header.is-scrolled{background:rgba(243,244,248,.87);border-color:rgba(255,255,25
   window.setInterval(()=>demos.forEach(timer=>{if(timer.running){timer.seconds++;timer.clock.textContent=demoFormat(timer.seconds)}}),1000);
 
   const projectSamples={
-    site:{name:'Сайт-портфолио',state:'В работе',hours:'18 ч 40 мин',price:'1 200 BYN',paid:false},
-    video:{name:'Монтаж ролика',state:'В работе',hours:'7 ч 25 мин',price:'650 BYN',paid:false},
-    brand:{name:'Фирменный стиль',state:'Оплачен',hours:'26 ч 15 мин',price:'1 800 BYN',paid:true}
+    site:{name:'Сайт-портфолио',state:'Оплачиваемый',hours:'18 ч 40 мин',price:'1 200 BYN',billable:true},
+    video:{name:'Монтаж ролика',state:'Оплачиваемый',hours:'7 ч 25 мин',price:'650 BYN',billable:true},
+    brand:{name:'Фирменный стиль',state:'Бесплатный',hours:'26 ч 15 мин',price:'0 BYN',billable:false}
   };
   const projectButtons=Array.from(document.querySelectorAll('.project-choice'));
   projectButtons.forEach(button=>button.addEventListener('click',()=>{
@@ -579,8 +579,8 @@ header.is-scrolled{background:rgba(243,244,248,.87);border-color:rgba(255,255,25
     document.getElementById('project-hours').textContent=value.hours;
     document.getElementById('project-price').textContent=value.price;
     document.getElementById('project-payment').textContent=value.state;
-    document.getElementById('project-insight-side').textContent=value.paid?'Оплата получена':'Оплата впереди';
-    document.getElementById('project-payment-dot').classList.toggle('is-paid',value.paid);
+    document.getElementById('project-insight-side').textContent=value.billable?'Фиксированная стоимость':'Без оплаты';
+    document.getElementById('project-payment-dot').classList.toggle('is-paid',value.billable);
   }));
 
   const statsPeriods={
