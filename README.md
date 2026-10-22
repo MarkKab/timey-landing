@@ -26,3 +26,7 @@ npm run deploy:worker
 ```
 
 No DNS or custom domain is required for the initial test. The existing Pages site `https://timey-landing.pages.dev/` is not removed or redirected.
+
+### Triggering a build after changing branch
+
+After changing the Cloudflare production branch from `main` to `feat/hero-v1`, do **not** retry a build labeled `main`: retry reuses the old revision. Push a new commit to `feat/hero-v1` to trigger an automatic production build. The build details must show `feat/hero-v1` before checking deployment results.
